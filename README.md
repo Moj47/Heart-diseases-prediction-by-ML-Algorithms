@@ -5,6 +5,38 @@ The main goal is not only achieving high accuracy, but also making **medically m
 
 ---
 
+## 📁 Dataset Information
+
+- 📌 **Total Samples:** 4,241
+- 🎯 **Target Variable:** `TenYearCHD`  
+  - `0` → No heart disease within 10 years  
+  - `1` → Heart disease risk within 10 years  
+
+The dataset contains demographic, behavioral, and medical risk factors related to cardiovascular disease.
+
+### 🔢 Features Description
+
+| Feature | Description |
+|------|------------|
+| `male` | Gender (1 = Male, 0 = Female) |
+| `age` | Age of the patient |
+| `education` | Education level |
+| `currentSmoker` | Whether the person currently smokes |
+| `cigsPerDay` | Number of cigarettes per day |
+| `BPMeds` | On blood pressure medication |
+| `prevalentStroke` | History of stroke |
+| `prevalentHyp` | Hypertension |
+| `diabetes` | Diabetes status |
+| `totChol` | Total cholesterol |
+| `sysBP` | Systolic blood pressure |
+| `diaBP` | Diastolic blood pressure |
+| `BMI` | Body Mass Index |
+| `heartRate` | Heart rate |
+| `glucose` | Glucose level |
+| `TenYearCHD` | Target label |
+
+---
+
 ## 🤖 Models Implemented
 - K-Nearest Neighbors (KNN)
 - Decision Tree (DT)

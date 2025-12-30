@@ -55,6 +55,42 @@ Each model was evaluated using:
 
 ⚠️ In medical problems, **Recall and F1-score are critical**, since missing a patient with heart disease can have serious consequences.
 
+## 📈 Key Evaluation Results (Test Set)
+
+Since this is a **medical classification problem**, the most important metrics are **Recall** and **F1-score** on the **test set**.
+Accuracy alone can be misleading in imbalanced datasets.
+
+### 🔑 Selected Test Metrics
+
+| Model | Accuracy | Precision | Recall | F1-score |
+|------|---------|-----------|--------|----------|
+| KNN | 0.8333 | 0.5000 | 0.0082 | 0.0161 |
+| Decision Tree | 0.8306 | 0.4375 | 0.0574 | 0.1014 |
+| Random Forest | 0.8361 | 0.6250 | 0.0410 | 0.0769 |
+| Logistic Regression | **0.8402** | **0.8571** | 0.0492 | 0.0930 |
+| **ANN** | 0.7992 | 0.3529 | **0.2459** | **0.2899** |
+
+---
+
+## 🥇 Top 3 Models (Based on Medical Relevance)
+
+### 🥇 1. Artificial Neural Network (ANN)
+- Highest **Recall** and **F1-score**
+- Best at identifying patients with heart disease
+- Slight overfitting, but most clinically useful model
+
+### 🥈 2. Decision Tree (DT)
+- Better Recall than most classical models
+- Simple and interpretable
+- Still limited in detecting positive cases
+
+### 🥉 3. Logistic Regression (LR)
+- Highest **Precision**
+- Very conservative predictions
+- Misses many true positive cases (low Recall)
+
+📌 **Final Note:**  
+Models with high Accuracy but extremely low Recall (e.g., KNN, Random Forest) are **not suitable** for heart disease detection despite their appealing accuracy scores.
 ---
 
 ## 🏆 Results Summary
